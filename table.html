@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tables in HTML</title>
+    <author>Keshav Varshney</author>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <h2 style="display: inline;">Table -></h2>
+    <p style="display: inline;">Arrangement of data in the form of rows and columns.
+    <br>There are diffrent tags for table. 
+</p>
+<pre>
+<b>1.table tag:-</b> used to create a new table. 
+<b>2.tr tag:- </b>used to add rows. 
+<b>3.td tag:-</b> used to add data in a row. 
+<b>4.thead tag:-</b> used to add head in table. 
+<b>5.tfooter tag:-</b> used to add a footer in table. 
+<b>6.tbody tag:-</b> used to create body of table. 
+<b>7.th tag:-</b> used to write in head.
+</pre>
+<pre>
+
+<h4>Some commonly used attributes in table.</h4>
+<b>1.border -></b> to create border. 
+<b>2.rowspan -></b> to extend row. 
+<b>3.colspan -></b> to extend column. 
+</pre>
+
+    <h3 align="center">Creating Table 1</h3>
+    <table align="center" border="10">
+        <tbody>
+        <tr>
+            <td>Column1</td>
+            <td>Column2</td>
+            <td>Column3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row1 Cell1</td>
+            <td>Row1 Cell2</td>
+            <td>Row1 Cell3</td>
+        </tr>
+        <tr>
+            <td>Row2 Cell2</td>
+            <td>Row2 Cell3</td>
+        </tr>
+        <tr>
+            
+            <td colspan="3">Row3 Cell1</td>
+        </tr>
+    </tbody>
+    </table>
+    <h3 align="center">Create table 2</h3>
+    <table border="1" align="center">
+        <thead>
+            <th>Sr. no.</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Microsoft</td>
+                <td>$1000</td>
+                <td rowspan="4">Company Founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckerberg</td>
+                <td>Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <td colspan="3" align="center">Total Expense:</td>
+                <td>$4600</td>
+        </tfoot>
+    </table>
+</body>
+</html>
