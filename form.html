@@ -5,10 +5,19 @@
       <author>Keshav Varshney</author>
    </head>
    <body>
-      <h1 align="center">Forms in Html</h1>
+    <br>
+        <table>
+            <tr>
+                <td><a href="#home">Home   </a></td>
+                <td><a href="#element">Form elemants   </a></td>
+                <td><a href="#inputs">Input types   </a></td>
+                <td><a href="#dummy">  Example forms  </a></td>
+            </tr>
+        </table>
+      <h1 align="center" id="home">Forms in Html</h1>
       <h2 style="display: inline;">Form -></h2>
       <p style="display: inline;">The form HTML element represents a document section containing interactive controls for submitting information.</p>
-      <h2>Some common form elements.</h2>
+      <h2 id="element">Some common form elements.</h2>
       <pre>
 <b>1.input -> </b>for taking different type of inputs.
 
@@ -29,7 +38,7 @@
 <b>8.legend -> </b>adding caption.
 
     </pre>
-      <h2>*Types of input :</h2>
+      <h2 id="inputs">*Types of input :</h2>
       <pre>
 <b>1.textfield -></b>to take multiline input.
 <b>2.button -></b> to create a button. set type = submit
@@ -44,7 +53,7 @@
 
 <!-- Example of forms -->
 <h1 align="center">**Some examples of form**</h1>
-<h2>Form no.1</h2>
+<h2 id="dummy">Form no.1</h2>
 
 <form >
     <fieldset>
@@ -66,7 +75,7 @@
         <br><br>
 
         <label for="experience">Experience (in years): </label>
-        <input type="text" id="experience">
+        <input type="number" id="experience" min="0" max="50">
         <br><br>
 
         <fieldset>
@@ -104,10 +113,26 @@
 
     <label for="comment">Additional Comments:</label>
     <br>
-    <input type="textarea" class="comment" width="400px" height="20px">
+    <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
     <br><br>
     <input type="submit" value="Submit" style="background-color: aquamarine;">
     </fieldset>
+    <h2>Frequent Questions</h2>
+    <details>
+        <summary>
+            What will be the post?
+        </summary>
+        <p>A software engineer.</p>
+    </details>
+    <details>
+        <summary>
+            What will be the salry?
+        </summary>
+        <p>
+            30,000 - 5,0000 per month.
+        </p>
+    </details>
 </form>
+
    </body>
 </html>
